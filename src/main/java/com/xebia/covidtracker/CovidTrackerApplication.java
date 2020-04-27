@@ -1,0 +1,17 @@
+package com.xebia.covidtracker;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+/**
+ * CovidTrackerApplication
+ * @author ankit.mishra@xebia.com
+ */
+@SpringBootApplication
+public class CovidTrackerApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(CovidTrackerApplication.class, args);
+	}
+
+}
