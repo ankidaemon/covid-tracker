@@ -10,7 +10,9 @@ Dockerfile exists in the project base directory
 for example -
 
 [ankitm@localhost covid-tracker]$ docker images
+
 REPOSITORY               TAG                 IMAGE ID            CREATED             SIZE
+
 covid-tracker            0.0.1-SNAPSHOT      9f2fc5938b3b        14 seconds ago      683MB
 
 * To start the application - docker run -i covid-tracker:0.0.1-SNAPSHOT
@@ -18,7 +20,7 @@ covid-tracker            0.0.1-SNAPSHOT      9f2fc5938b3b        14 seconds ago 
 ### Apis
 
 
-* [initialData](localhost:8080/initialData) PUT
+* [initialData] localhost:8080/initialData PUT
 	- Header: Content-Type:text/csv
 	- Request 
 Id,Location,Tested,Confirmed,Active,Recovered,Dead
@@ -27,7 +29,7 @@ Id,Location,Tested,Confirmed,Active,Recovered,Dead
 3,Kerala,7000,145,144,1,0
 
 
-* [updateCityData](localhost:8080/updateCityData/delhi) PATCH
+* [updateCityData] localhost:8080/updateCityData/delhi PATCH
 	- Header: Content-Type:application/json
 	- Request 
 {
@@ -36,7 +38,7 @@ Id,Location,Tested,Confirmed,Active,Recovered,Dead
     "Active":1
 }
 
-* [Search Filter](localhost:8080/findAll?location=Delhi&location=Gujrat) GET
+* [Search Filter] localhost:8080/findAll?location=Delhi&location=Gujrat GET
 
-* [Search Filter](localhost:8080/findAll?location=Delhi&location=Gujrat&type=min&selected=active) GET
+* [Search Filter] localhost:8080/findAll?location=Delhi&location=Gujrat&type=min&selected=active GET
 
